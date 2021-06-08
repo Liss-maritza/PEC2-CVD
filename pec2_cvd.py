@@ -30,8 +30,9 @@ Tendréis que entregar un solo archivo con el enlace Github (https://github.com)
 <div style="background-color: #EDF7FF; border-color: #7C9DBF; border-left: 5px solid #7C9DBF; padding: 0.5em;">
 <strong>Trabajo realizado por:</strong> 
     
-    - César Irnán Sillero
     - Lissette Muñoz Guillen
+    - César Irnán Sillero
+
 </div>
 """
 
@@ -102,7 +103,7 @@ Los objetivos concretos de esta práctica son:
 
 <hr>
 <div style="background-color: #F4F6F6;">
-Con la carga de los datos, tenemos un set con 9 variables que proporcionan información de los clientes y una variable hipoteca que determina si fue o no otorgada la hipoteca.
+Con la carga de los datos, tenemos un set con 12 variables que proporcionan información de los componentes de una muestra de vinos tintos y una variable objetivo llamada calidad, que servirá como etiqueta para aprendizajes supervisados.
 
 Inicialmente exploraremos los datos
 </div>
@@ -154,10 +155,7 @@ wine.isnull().values.any()
 """<div style="background-color: #F4F6F6;">
 Podemos observar que nuestro conjunto de datos no tiene valores nulos. La función anterior nos devolviera TRUE si existiera algún NaN en el DataFrame.
     
-En el caso de existir este tipo de valores en nuestros datos los tratariamos de la siguinte manera:
-    
-    
-    ....pendiente...
+En el caso de existir este tipo de valores en nuestros datos los tratariamos  dependiendo de la variable, podríamos reemplazar los valores nulos por la media aritmetica del resto del dataset, o simplemente eliminando esa muestra completamente
 </div>
 
 <div style="background-color: #EDF7FF; border-color: #7C9DBF; border-left: 5px solid #7C9DBF; padding: 0.5em;">
